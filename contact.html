@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>University Website Design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<h2>  Toshkent shahridagi INHA universiteti  </h2>
+			<div class="nav-links" id="navLinks">
+				<i class="fas fa-window-close" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Contact Us</h1>
+	</section>
+
+
+	<section class="location">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.544540690993!2d69.33453!3d41.338525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef48a8ed4d0e9%3A0x3772abeffc72e7b8!2sInha%20University%20in%20Tashkent!5e0!3m2!1sen!2s!4v1698769129563!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+
+	<section class="contact-us">
+
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>9, Ziyolilar str., M.Ulugbek district,</h5>
+						<p>Tashkent, Uzbekistan</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+998 71 289-99-99</h5>
+						<p>Monday to Friday, 9AM–6PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<span>
+						<h5>info@inha.uz</h5>
+						<p>Email us your query</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+				<form action="">
+					<input type="text" placeholder="Enter your name" required>
+					<input type="email" placeholder="Enter email address" required>
+					<input type="text" placeholder="Enter your subject" required>
+					<textarea rows="8" placeholder="Massage" required></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Massage</button>
+				</form>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="footer">
+	 	<div>
+	 		<h1>About Us</h1>
+	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 	tempor incididunt uLorem ipsum dolor sit amet, <br>consectetur adipisicing elit, sed do eiusmod
+	 	tempor  labore et dolore magna.</p>
+	 	</div>
+    <div class="icons">
+       <a href="https://www.facebook.com/inha.uz/"><i class="fab fa-facebook"></i></a>
+      <a href="https://t.me/inha_uz"><i class="fab fa-telegram"></i></a>
+      <a href="https://www.instagram.com/inha_tashkent"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/school/inha-university-in-tashkent/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/c/InhaUz"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0"
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+</script>
+
+</body>
+</html>
